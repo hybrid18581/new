@@ -8,12 +8,17 @@ import { TabsComponent } from './tabs/tabs.component';
 import { InventoryComponent } from './inventory/inventory.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProfileComponent } from './profile/profile.component';
-import { LoginComponent } from './login/login.component';
+import{ MaterialModule} from './material/material.module';
 import {FormsModule} from '@angular/forms'
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { LoginComponent } from './login/login.component';
+import { KingslandingComponent } from './kingslanding/kingslanding.component';
+
 
 
 ;
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +27,8 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     InventoryComponent,
     ProfileComponent,
     LoginComponent,
+    KingslandingComponent,
+    
     
     
   ],
@@ -32,6 +39,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     ReactiveFormsModule,
     FormsModule,
     MDBBootstrapModule.forRoot(),
+    MaterialModule,
     
   ],
   providers: [],

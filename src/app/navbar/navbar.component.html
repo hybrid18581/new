@@ -1,47 +1,50 @@
 
-<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark bg-primary" [containerInside]="false">
+<div class="example mb-5 z-depth-5">
+  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark bg-primary " [containerInside]="false">
 
   
-  <mdb-navbar-brand><a class="navbar-brand" href="#">Fire Elf</a></mdb-navbar-brand>
-
+    <mdb-navbar-brand><a class="navbar-brand" href="#">Fire Elf</a></mdb-navbar-brand>
   
-  <links>
-
-   
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link waves-light" mdbWavesEffect routerLink="#">Home<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link waves-light" mdbWavesEffect routerLink="inventory">inventory</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link waves-light" mdbWavesEffect>Carriage</a>
-      </li>
-
-      
-      <li class="nav-item dropdown" dropdown>
-        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-          Profile<span class="caret"></span></a>
-        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-          <a class="dropdown-item waves-light" mdbWavesEffect routerLink="Login">Login</a>
-          <a class="dropdown-item waves-light" mdbWavesEffect routerLink="Profile">Resister </a>
-          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Log out</a>
-          <div class="divider dropdown-divider"></div>
-          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Profile</a>
-        </div>
-      </li>
-
-    </ul>
     
-    <form class="form-inline md-form m-auto mb-5">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button mdbBtn size="sm" gradient="aqua" rounded="true" class="my-0 waves-light" mdbWavesEffect type="submit">Search</button>
-    </form>
-  </links>
-
-
-</mdb-navbar>
+    <links>
+  
+     
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link waves-light" mdbWavesEffect routerLink="#">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-light" mdbWavesEffect routerLink="inventory">inventory</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-light" mdbWavesEffect>Carriage</a>
+        </li>
+  
+        
+        <li class="nav-item dropdown" dropdown>
+          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+            Profile<span class="caret"></span></a>
+          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+            <a class="dropdown-item waves-light" mdbWavesEffect routerLink="Login">Login</a>
+            <a class="dropdown-item waves-light" mdbWavesEffect routerLink="Profile">Resister </a>
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Log out</a>
+            <div class="divider dropdown-divider"></div>
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Profile</a>
+          </div>
+        </li>
+  
+      </ul>
+      
+      <form class="form-inline md-form ml-auto ">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button mdbBtn size="sm" gradient="aqua" rounded="true" class="my-0 waves-light" mdbWavesEffect type="submit">Search</button>
+      </form>
+    </links>
+  
+  
+  </mdb-navbar>
+  
+</div>
 
   <router-outlet></router-outlet>
   
